@@ -18,9 +18,6 @@
 your_project/ ├── app.py # Streamlit을 통한 사용자 인터페이스 및 메인 애플리케이션 ├── data.py # 뉴스 데이터(문서)를 정의한 파일 ├── generation.py # 텍스트 생성 모델 초기화 및 프롬프트 생성 관련 함수들 └── retriever.py # BM25, FAISS, Ensemble Retriever를 초기화하고 검색 함수 제공
 
 shell
-복사
-편집
-
 ## 설치 및 실행
 
 ### 1. 의존성 패키지 설치
@@ -33,8 +30,6 @@ pip install streamlit langchain_community transformers torch
 터미널에서 아래 명령어를 실행하여 Streamlit 애플리케이션을 시작합니다.
 
 bash
-복사
-편집
 streamlit run app.py
 웹 브라우저가 자동으로 열리며, 채팅 인터페이스를 통해 질문을 입력하면 해당 질문에 대한 답변이 생성됩니다.
 
